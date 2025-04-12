@@ -43,6 +43,6 @@ projects.forEach(project => {
 // Welcome Message
 window.addEventListener("load", () => {
   setTimeout(() => {
-    alert("👋 Welcome to Azahar’s Interactive Portfolio!");
+    alert("👋 Welcome to Azahar Hossen Novel Portfolio!");
   }, 300);
 });
