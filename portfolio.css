@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .links a {
+    color: #00bcd4;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2rem;
+    background: white;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+  }
+  
