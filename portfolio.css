@@ -1,42 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f0f4ff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  animation: fadeIn 1s ease-in;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.links {
+  margin-top: 1rem;
+}
+.links a {
+  margin: 0 10px;
+  padding: 0.5rem 1rem;
+  background: #00bcd4;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.links a:hover {
+  background: #ff9800;
+  transform: scale(1.1);
+}
+
+section {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+section:hover {
+  transform: translateY(-5px);
+}
+
+section h2 {
+  color: #4b6cb7;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: '💡 ';
+  padding-left: 1rem;
+}
+
+#project-container div {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-left: 4px solid #4b6cb7;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+#project-container div:hover {
+  background: #e0f7fa;
+  transform: scale(1.02);
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  header {
-    background: #333;
-    color: white;
-    padding: 2rem;
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .links a {
-    color: #00bcd4;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 2rem;
-    background: white;
-    margin: 1rem auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  footer {
-    background: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 1rem;
-  }
-  
+}
