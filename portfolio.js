@@ -16,7 +16,7 @@ const projects = [
   }
 ];
 
-// Skills Section
+// Load Skills
 const skillsList = document.getElementById("skills-list");
 skills.forEach(skill => {
   const li = document.createElement("li");
@@ -28,7 +28,7 @@ skills.forEach(skill => {
   skillsList.appendChild(li);
 });
 
-// Projects Section
+// Load Projects
 const projectContainer = document.getElementById("project-container");
 projects.forEach(project => {
   const div = document.createElement("div");
@@ -40,9 +40,9 @@ projects.forEach(project => {
   projectContainer.appendChild(div);
 });
 
-// Welcome alert
+// Welcome Message
 window.addEventListener("load", () => {
   setTimeout(() => {
     alert("👋 Welcome to Azahar’s Interactive Portfolio!");
-  }, 500);
+  }, 300);
 });

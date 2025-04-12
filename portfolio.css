@@ -20,26 +20,32 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .links {
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
 }
+
 .links a {
-  margin: 0 10px;
-  padding: 0.5rem 1rem;
   background: #00bcd4;
   color: white;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 20px;
   font-weight: 500;
   transition: 0.3s ease;
 }
+
 .links a:hover {
   background: #ff9800;
   transform: scale(1.1);
@@ -49,18 +55,15 @@ section {
   background: white;
   margin: 2rem auto;
   padding: 2rem;
-  max-width: 800px;
+  max-width: 900px;
   border-radius: 12px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
-  transition: 0.3s ease;
-}
-section:hover {
-  transform: translateY(-5px);
 }
 
 section h2 {
   color: #4b6cb7;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 ul {
@@ -76,6 +79,7 @@ ul {
   border-radius: 8px;
   transition: all 0.3s ease;
 }
+
 #project-container div:hover {
   background: #e0f7fa;
   transform: scale(1.02);
@@ -97,5 +101,27 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links a {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  section {
+    padding: 1.2rem;
   }
 }
